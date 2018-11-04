@@ -1,0 +1,187 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter UI", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #040401;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.titan-background {
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #000000 0%, #200835 100%);
+  overflow: hidden;
+  z-index: 1;
+  /* Make the rubber band scroll not show empty white space */
+  top: -10%;
+  height: 120%;
+  min-height: 120vh;
+  margin-bottom: -20%;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 50vh;
+  transform: translate(0%, 0%);
+  background-size: contain;
+  background-repeat: repeat;
+  transform-origin: top left;
+}
+
+.stars-L {
+  background-image: url("assets/stars-L.png");
+  background-size: 890px;
+  height: 2000px;
+  animation: panning-stars 50s linear infinite alternate;
+}
+
+.stars-M {
+  background-image: url("assets/stars-M.png");
+  height: 2000px;
+  animation: panning-stars 60s linear infinite alternate;
+}
+
+.stars-S {
+  background-image: url("assets/stars-S.png");
+  height: 2000px;
+  animation: panning-stars 10s linear infinite alternate;
+}
+
+@keyframes panning-stars {
+  from {
+    transform: translate(-20%, 0%);
+  }
+  to {
+    transform: translate(-80%, -40%);
+  }
+}
+
+.marvellous-container {
+  position: relative;
+  z-index: 2;
+  padding: 150px 0 24px 0;
+  width: 95%;
+  max-width: 550px;
+  margin: auto;
+}
+
+h1 {
+  display: block;
+  font-size: 80px;
+  margin: 0 0 24px 0;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16vw;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.title-marvel {
+  font-weight: bolder;
+  color: #020103;
+  letter-spacing: -6.7px;
+  text-transform: uppercase;
+  padding: 0 50px;
+  background: #f5e400;
+}
+
+.title-studios {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  color: #deb30f;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 0 16px;
+  line-height: 1;
+}
+
+code {
+  display: block;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 18px;
+  width: 100%;
+  padding: 16px 24px;
+  background: rgba(44, 37, 44, 0.8);
+  border: 1px solid #7f797f;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.header {
+  margin-bottom: 200px;
+}
+
+.installation-instructions,
+.usage-instructions {
+  margin-top: 70px;
+}
+
+.footer {
+  margin-top: 224px;
+}
+
+.footer img {
+  height: 104px;
+  width: auto;
+}
+
+.usage-instructions {
+  padding-top: 100px; 
+}
+
+.abouttext {
+  padding-top: 20px;
+  text-align: left;
+}
+
+.contact {
+  padding-top: 50px;	
+}
